@@ -7,7 +7,6 @@ A walkthrough repo that runs two servers inside MHNOS and exposes a dark, intera
 - **Control Server (3000):** Hosts the UI and renders results.
 - **Worker Server (4000):** Performs the heavy work (parse, generate, fetch, search).
 
-Because the OS browser only loads pages through the built-in address bar, the UI uses the URL bar to trigger actions. This keeps everything compatible with MHNOS loopback networking.
 
 ## Quick Start
 
@@ -43,9 +42,8 @@ localhost:3000
 
 ## Using the Control Hub
 
-1) Click any action button to build an action URL.
-2) Copy it, paste it into the OS browser address bar, and press Go.
-3) The page reloads with the worker response rendered.
+1) Click any button to test an action.
+2) The page reloads with the worker response rendered.
 
 Example URLs:
 
