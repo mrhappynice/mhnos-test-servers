@@ -87,6 +87,10 @@ function renderPage(params, actionResult) {
           <button data-action="write">Generate File Draft</button>
           <button data-action="remote" data-url="${defaultUrl}">Fetch Remote</button>
         </div>
+    <section class="results">
+      <h2>Results</h2>
+      ${renderResultBlock(action, actionResult)}
+    </section>
         <div class="url-builder">
           <label>Action URL</label>
           <input id="action-url" readonly value="localhost:${PORT}/" />
@@ -106,10 +110,6 @@ function renderPage(params, actionResult) {
       </div>
     </section>
 
-    <section class="results">
-      <h2>Results</h2>
-      ${renderResultBlock(action, actionResult)}
-    </section>
 
     <section class="instructions">
       <h2>What This Proves</h2>
