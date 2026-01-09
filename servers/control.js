@@ -3,7 +3,8 @@ const fs = require('fs');
 const { runAction, DEFAULT_REMOTE_URL } = require('./worker-core');
 
 const PORT = 3000;
-const PUBLIC_DIR = '/test-repo/public';
+const path = require('path');
+const PUBLIC_DIR = path.join(process.cwd(), '../public');
 
 function parseQuery(url) {
   const parsed = new URL(`http://localhost${url}`);
