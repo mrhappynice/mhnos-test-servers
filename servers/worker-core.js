@@ -5,7 +5,8 @@ const Fuse = require('fuse.js');
 const dayjs = require('dayjs');
 const _ = require('lodash');
 
-const DATA_ROOT = '/test-repo/data';
+const path = require('path');
+const DATA_ROOT = path.join(process.cwd(), '../data');
 const DEFAULT_REMOTE_URL = 'https://jsonplaceholder.typicode.com/todos/1';
 const ID_ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
